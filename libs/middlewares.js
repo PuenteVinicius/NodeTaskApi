@@ -12,4 +12,3 @@ module.exports = app => {
         next();
     });
 };
-app.use(bodyParser.json())
