@@ -24,10 +24,10 @@ import {Strategy, ExtractJwt} from "passport-jwt";
   passport.use(strategy);
   return{
     initialize: () =>{
-      return passaport.initialize();
+      return passport.initialize();
     },
     authenticate: ()=>{
-      return passaport.authenticate("jwt", cfg.jwtSession);
+      return passport.authenticate("jwt", cfg.jwtSession);
     }
   };
 };
