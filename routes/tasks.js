@@ -2,6 +2,7 @@ module.exports = app => {
     const Tasks = app.db.models.Tasks;
 
     app.route("/tasks")
+    .all(app.auth.authenticate())
     .get((req, res) => {
       Tasks.findAll({})
         .then(result => res.json(result))
@@ -17,6 +18,7 @@ module.exports = app => {
         });
     });
     app.route("/tasks/:id")
+    .all(app.auth.authenticate())
     .get((req, res) => {
       Tasks.findOne({where: req.params})
         .then(result => {
