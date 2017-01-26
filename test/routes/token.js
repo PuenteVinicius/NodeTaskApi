@@ -12,22 +12,6 @@ describe("Routes: Token", () => {
         }))
         .then(done());
     });
-
-    describe("status 200", () => {
-      it("returns authenticated user token", done => {
-        request.post("/token")
-          .send({
-            email: "john@mail.net",
-            password: "12345"
-          })
-          .expect(200)
-          .end((err, res) => {
-            expect(res.body).to.include.keys("token");
-            done(err);
-          });
-      });
-    });
-
     describe("status 401", () => {
       it("throws error when password is incorrect", done => {
         request.post("/token")
@@ -59,6 +43,20 @@ describe("Routes: Token", () => {
           .end((err, res) => {
             done(err);
           });
+      });
+      describe("status 200", () => {
+        it("returns authenticated user token", done => {
+          request.post("/token")
+            .send({
+              email: "john@mail.net",
+              password: "12345"
+            })
+            .expect(200)
+            .end((err, res) => {
+              expect(res.body).to.include.keys[("token")];
+              done(err);
+            });
+        });
       });
     });
   });
