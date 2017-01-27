@@ -1,17 +1,10 @@
-import
-import
-import
-import
-import
-import
-import
-bodyParser from "body-parser";
-express from "express";
-morgan from "morgan";
-cors from "cors";
-compression from "compression";
-helmet from "helmet";
-logger from "./logger.js";
+import bodyParser from "body-parser";
+import express from "express";
+import morgan from "morgan";
+import cors from "cors";
+import compression from "compression";
+import helmet from "helmet";
+import logger from "./logger.js";
 module.exports = app => {
     app.set("port", 3000);
     app.set("json spaces", 4);
