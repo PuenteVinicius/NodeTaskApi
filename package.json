@@ -1,35 +1,38 @@
-  {
-  "name": "ntask-api",
-  "version": "1.0.0",
-  "description": "API de gestão de tarefas",
-  "main": "index.js",
-  "scripts": {
-    "start": "babel-node index.js",
-    "test": "NODE_ENV=test mocha test/**/*.js"
-  },
-  "author": "ViniciusPuente",
-  "dependencies": {
-    "babel-cli": "^6.5.1",
-    "babel-preset-es2015": "^6.5.0",
-    "bcrypt": "^0.8.5",
-    "body-parser": "^1.15.0",
-    "compression": "^1.6.1",
-    "consign": "^0.1.2",
-    "cors": "^2.7.1",
-    "express": "^4.13.4",
-    "helmet": "^1.1.0",
-    "jwt-simple": "^0.4.1",
-    "morgan": "^1.6.1",
-    "passport": "^0.3.2",
-    "passport-jwt": "^2.0.0",
-    "sequelize": "^3.19.2",
-    "winston": "^2.1.1"
-  },
-  "devDependencies": {
-    "apidoc": "^0.15.1",
-    "babel-register": "^6.5.2",
-    "chai": "^3.5.0",
-    "mocha": "^2.4.5",
-    "supertest": "^1.2.0"
-  }
+{
+    "name": "ntask-api",
+    "version": "1.0.0",
+    "description": "API de gestão de tarefas",
+    "main": "index.js",
+    "scripts": {
+        "start": "npm run apidoc && babel-node index.js",
+        "apidoc": "apidoc -i routes/ -o public/apidoc",
+        "test": "NODE_ENV=test mocha test/**/*.js"
+    },
+    "apidoc": {
+        "name": "Documentação - Node Task API",
+        "template": {
+            "forceLanguage": "pt_br"
+        }
+    },
+    "author": "Caio Ribeiro Pereira",
+    "dependencies": {
+        "babel-cli": "^6.5.1",
+        "babel-preset-es2015": "^6.5.0",
+        "bcrypt": "^0.8.5",
+        "body-parser": "^1.15.0",
+        "consign": "^0.1.2",
+        "express": "^4.13.4",
+        "jwt-simple": "^0.4.1",
+        "passport": "^0.3.2",
+        "passport-jwt": "^2.0.0",
+        "sequelize": "^3.19.2",
+        "sqlite3": "^3.1.1"
+    },
+    "devDependencies": {
+        "apidoc": "^0.15.1",
+        "babel-register": "^6.5.2",
+        "chai": "^3.5.0",
+        "mocha": "^2.4.5",
+        "supertest": "^1.2.0"
+    }
 }
