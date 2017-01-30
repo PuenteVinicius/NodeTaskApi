@@ -14,6 +14,6 @@
 
     4. Rodar os testes: npm test>
 
-### Obs: caso apareça algum erro relacionado a instalação do sqlite3 remova o mesmo das dependência do arquivo: pacakge.json e instale manualmente utilizando: ###
+Obs: caso apareça algum erro relacionado a instalação do sqlite3 remova o mesmo das dependência do arquivo: pacakge.json e instale manualmente utilizando: ###
 
     5. npm install sqlite3.
