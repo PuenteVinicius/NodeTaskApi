@@ -6,14 +6,14 @@
 
 # Instalação #
 
-  1. Clone o repositório: <git clone https://github.com/PuenteVinicius/Node-taskApi.git>
+    1. Clone o repositório: git clone https://github.com/PuenteVinicius/Node-taskApi.git
 
-  2. Instale os módulos: <npm install>
+    2. Instale os módulos: npm install
 
-  3. Startar o server: <npm start>
+    3. Startar o server: npm start
 
-  4. Rodar os testes: <npm test>
+    4. Rodar os testes: npm test>
 
 ### Obs: caso apareça algum erro relacionado a instalação do sqlite3 remova o mesmo das dependência do arquivo: pacakge.json e instale manualmente utilizando: ###
 
-  5. npm install sqlite3.
+    5. npm install sqlite3.
