@@ -16,7 +16,7 @@
 
 Obs: caso apareça algum erro relacionado a instalação do sqlite3 remova o mesmo das dependência do arquivo: pacakge.json e instale manualmente utilizando: ###
 
-    5. npm install sqlite3.
+    5. npm install sqlite3
 
 # Repositório Original #
 https://github.com/caio-ribeiro-pereira/ntask-api
