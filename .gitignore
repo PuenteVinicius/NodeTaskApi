@@ -54,4 +54,12 @@ jspm_packages
 ### Git ###
 *.orig
 
+npm-debug.log
+ntask.sqlite
+ntask_test.sqlite
+.DS_Store
+public/apidoc
+logs/*.log
+
+
 # End of https://www.gitignore.io/api/node,git
