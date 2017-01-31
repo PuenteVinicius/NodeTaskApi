@@ -6,7 +6,7 @@
 
 # Instalação #
 
-    1. Clone o repositório: $ git clone (https://github.com/PuenteVinicius/Node-taskApi.git)
+    1. Clone o repositório: $ git clone https://github.com/PuenteVinicius/Node-taskApi.git
 
     2. Instale os módulos: $ npm install
 
@@ -20,11 +20,11 @@ Obs: caso apareça algum erro relacionado a instalação do sqlite3 remova o mes
 
 # Exibindo a api #
 
-  Para visualizar a api acesse o seguinte endereço em seu navegador: (https://localhost:3000/)
+  Para visualizar a api acesse o seguinte endereço em seu navegador: https://localhost:3000/
 
 # Exibindo a documentação #
 
-  Para visualizar a documentação da api acesse o seguinte endereço em seu navegador: (https://localhost:3000/apidoc/)
+  Para visualizar a documentação da api acesse o seguinte endereço em seu navegador: https://localhost:3000/apidoc/
 
 # Repositório Original #
-  (https://github.com/caio-ribeiro-pereira/ntask-api)
+https://github.com/caio-ribeiro-pereira/ntask-api
