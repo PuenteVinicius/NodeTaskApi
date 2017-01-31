@@ -8,19 +8,19 @@ module.exports = app => {
           * @apiGroup Usuário
           * @apiHeader {String} Authorization Token de usuário
           * @apiHeaderExample {json} Header
-          * {"Authorization": "JWT xyz.abc.123.hgf"}
+          *   {"Authorization": "JWT xyz.abc.123.hgf"}
           * @apiSuccess {Number} id Id de registro
           * @apiSuccess {String} name Nome
           * @apiSuccess {String} email Email
           * @apiSuccessExample {json} Sucesso
-          * HTTP/1.1 200 OK
+          *   HTTP/1.1 200 OK
           * {
           *   "id": 1,
           *   "name": "John Connor",
           *   "email": "john@connor.net"
           *}
           * @apiErrorExample {json} Erro de consulta
-          * HTTP/1.1 412 Precondition Failed
+          *   HTTP/1.1 412 Precondition Failed
           */
         .get((req, res) => {
             Users.findById(req.user.id, {
