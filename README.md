@@ -18,5 +18,13 @@ Obs: caso apareça algum erro relacionado a instalação do sqlite3 remova o mes
 
     5. $npm install sqlite3
 
+# Exibindo a api
+
+Para visualizar a api acesse o seguinte endereço em seu navegador: https://localhost:3000
+
+# Exibindo a documentação
+
+Para visualizar a documentação da api acesse o seguinte endereço em seu navegador: https://localhost:3000/apidoc/
+
 # Repositório Original #
 https://github.com/caio-ribeiro-pereira/ntask-api
