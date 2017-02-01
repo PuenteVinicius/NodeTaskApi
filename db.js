@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import Sequelize from "sequelize";
 let db = null;
+/*Aqui é aonde se é realizada a conexão com o banco de dados*/
 module.exports = app => {
     if (!db) {
         const config = app.libs.config;

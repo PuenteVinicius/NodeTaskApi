@@ -1,4 +1,4 @@
-# Node-taskApi #
+# Nodetas-kApi #
 
   Este repositório é destinado ao estudo do  livro: "Construindo api's rest com nodejs" do autor Caio Ribeiro Pereira.
 

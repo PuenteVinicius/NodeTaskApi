@@ -1,5 +1,5 @@
-import https from "https";
-import fs from "fs";
+import https from "https";//importando os módulos https
+import fs from "fs"; // importanto o modulo fs
 module.exports = app => {
     if (process.env.NODE_ENV !== "test") {
         const credentials = {

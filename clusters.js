@@ -1,3 +1,9 @@
+/*É a ideia de separar a aplicação em vários processos, pois o código
+não é sempre Linear e sim paralelo e concorrente, o número de clusters é dado por:
+
+Nº Processadores * Nº de núcelos
+
+*/
 import cluster from "cluster";
 import os from "os";
 const CPUS = os.cpus();

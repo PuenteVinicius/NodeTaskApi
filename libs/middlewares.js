@@ -1,3 +1,6 @@
+/*Os Middlewares são funções que podem tratar os inputs e outputs das rotas
+antes e depois que uma rota é processada, ou seja basicamente são funções
+que serão utilizadas em um contexto geral*/
 import bodyParser from "body-parser";
 import express from "express";
 import morgan from "morgan";

@@ -1,3 +1,4 @@
+/*aqui são definidas as estratégias e as regras para autenticação de passport*/
 import passport from "passport";
 import {Strategy, ExtractJwt} from "passport-jwt";
 
